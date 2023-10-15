@@ -1,0 +1,36 @@
+.title {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  color: var(--white);
+  font-size: 2.0rem;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--white);
+  font-weight: 400;
+  border-spacing: 0;
+  margin-bottom: 1.5rem;
+
+  td {
+    border: 1px solid var(--white);
+    text-align: center;
+    padding: 1rem 0.7rem;
+  }
+
+  td:first-child {
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+
+  td:last-child {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem 2rem;
+  }
+
+}

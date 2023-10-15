@@ -1,0 +1,67 @@
+.root {
+  margin-bottom: 4rem;
+}
+
+.withBG {
+  padding: 0.5rem 2.7rem 2rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.list {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  list-style-type: disc;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.noNeedToThink {
+  margin: 0 3rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: var(--white);
+  color: var(--red);
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+
+  ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+  }
+}
+
+.flag {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+}
+
+.statisticsBlock {
+  padding: 1rem 5.5rem 0;
+  margin: 0 auto;
+}
+
+.statisticsText {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: var(--white);
+  color: var(--dark);
+  font-family: 'SF Pro Text', Roboto, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  span {
+    color: var(--red);
+    font-weight: 700;
+  }
+}

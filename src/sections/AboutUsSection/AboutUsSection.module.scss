@@ -1,0 +1,19 @@
+.root {
+  padding: 3.5rem 0 1.5rem;
+  background: url('../../shared/assets/img/aboutUsBG.png');
+  background-size: cover;
+  background-position: 10%;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style-type: none;
+}

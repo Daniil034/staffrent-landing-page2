@@ -1,0 +1,14 @@
+.root {
+  padding: 1.5rem 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}

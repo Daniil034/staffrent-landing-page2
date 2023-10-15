@@ -1,0 +1,38 @@
+.root {
+  padding: 2rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../shared/assets/img/formBG.png");
+  background-size: cover;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+.input {
+  border-radius: 1rem;
+  border: 0.3rem solid var(--white);
+  background: rgba(255, 255, 255, 0.40);
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white);
+
+  &::placeholder {
+    color: var(--white);
+  }
+
+  //&:focus {
+  //  outline: none;
+  //}
+}
