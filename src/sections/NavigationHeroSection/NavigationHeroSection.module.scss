@@ -4,3 +4,20 @@
   background-size: cover;
   background-position: center;
 }
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 30rem;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .description {
+    margin: 0 0 1rem auto;
+    text-align: right;
+  }
+}

@@ -1,3 +1,8 @@
+.container {
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
 .title {
   font-family: 'HelveticaNeueCyr', sans-serif;
   color: var(--white);
@@ -15,6 +20,7 @@
   font-weight: 400;
   border-spacing: 0;
   margin-bottom: 1.5rem;
+  max-width: 380px;
 
   td {
     border: 1px solid var(--white);
@@ -32,5 +38,42 @@
     border-top-right-radius: 1rem;
     padding: 1rem 2rem;
   }
+}
 
+.descriptionTitle {
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin-bottom: 3.5rem;
+}
+
+.img {
+  padding: 0 2.5rem;
+  margin: 0 auto 3.5rem;
+}
+
+.carousel {
+  padding: 0 5rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.arrow {
+  width: 2.4rem;
+  height: auto;
+  transform: translateY(-50%);
+}
+
+.prevArrow {
+  left: -3rem;
+}
+
+.nextArrow {
+  transform: translateY(-50%) scaleX(-1);
+  right: -3rem;
+}
+
+.contacts {
+  margin-bottom: 2rem;
 }

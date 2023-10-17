@@ -1,9 +1,15 @@
 .root {
   position: relative;
+  max-width: 25rem;
+  margin: 0 auto;
 }
 
 .country {
   fill: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .estoniaLink {
@@ -22,4 +28,16 @@
   position: absolute;
   top: 27rem;
   left: 5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .estoniaLink,
+  .latviaLink,
+  .lithuaniaLink {
+    display: none;
+  }
+
+  .country:hover {
+    fill: var(--red);
+  }
 }

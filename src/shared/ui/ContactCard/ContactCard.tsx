@@ -27,11 +27,11 @@ export function ContactCard() {
                     Сб-Вс<br/>
                     11:00 - 17:00
                 </Paragraph>
-                <div className={styles.links}>
-                    <a href="/"><InstagramIcon/></a>
-                    <a href="/"><WhatsappIcon/></a>
-                    <a href="/"><ViberIcon/></a>
-                </div>
+            </div>
+            <div className={styles.links}>
+                <a href="/"><InstagramIcon className={styles.icon}/></a>
+                <a href="/"><WhatsappIcon className={styles.icon}/></a>
+                <a href="/"><ViberIcon className={styles.icon}/></a>
             </div>
         </div>
     );

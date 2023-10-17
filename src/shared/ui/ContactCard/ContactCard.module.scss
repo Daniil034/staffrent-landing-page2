@@ -2,6 +2,8 @@
   padding: 1.5rem 3.5rem;
   border-radius: 0.4rem;
   background: var(--white);
+  width: 25rem;
+  margin: 0 auto;
 }
 
 .title {
@@ -28,4 +30,22 @@
   gap: 2rem;
   width: min-content;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: 38rem;
+  }
+
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: auto;
+  }
 }

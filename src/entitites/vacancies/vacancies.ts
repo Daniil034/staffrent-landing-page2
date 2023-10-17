@@ -23,21 +23,71 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
 
     vacancies = [
         {
-            imgSrc: loh,
+            imgSrc: [loh, loh, loh, loh, loh,],
             title: 'Членосос',
             subtitle: 'subtitle',
             descriptionTitle: 'description title',
-            description: 'description',
+            description: 'description description description description description description description description description description description description description description description description description description description description ',
             rate: 0.1,
             id: 'vilizivatelChlenov',
             country: countries.estonia
         },
         {
-            imgSrc: loh,
+            imgSrc: [loh, loh, loh, loh],
             title: 'Очконюх',
             subtitle: 'subtitle',
             descriptionTitle: 'description title',
-            description: 'description',
+            description: 'description description description description description description description description description description description description description description description description description ',
+            rate: 0.1,
+            id: 'vilizivatelOchek',
+            country: countries.latvia
+        },
+        {
+            imgSrc: [loh, loh, loh, loh],
+            title: 'Очконюх',
+            subtitle: 'subtitle',
+            descriptionTitle: 'description title',
+            description: 'description description description description description description description description description description description description description description description description description ',
+            rate: 0.1,
+            id: 'vilizivatelOchek',
+            country: countries.latvia
+        },
+        {
+            imgSrc: [loh, loh, loh, loh],
+            title: 'Очконюх',
+            subtitle: 'subtitle',
+            descriptionTitle: 'description title',
+            description: 'description description description description description description description description description description description description description description description description description ',
+            rate: 0.1,
+            id: 'vilizivatelOchek',
+            country: countries.latvia
+        },
+        {
+            imgSrc: [loh, loh, loh, loh],
+            title: 'Очконюх',
+            subtitle: 'subtitle',
+            descriptionTitle: 'description title',
+            description: 'description description description description description description description description description description description description description description description description description ',
+            rate: 0.1,
+            id: 'vilizivatelOchek',
+            country: countries.latvia
+        },
+        {
+            imgSrc: [loh, loh, loh, loh],
+            title: 'Очконюх',
+            subtitle: 'subtitle',
+            descriptionTitle: 'description title',
+            description: 'description description description description description description description description description description description description description description description description description ',
+            rate: 0.1,
+            id: 'vilizivatelOchek',
+            country: countries.latvia
+        },
+        {
+            imgSrc: [loh, loh, loh, loh],
+            title: 'LAST',
+            subtitle: 'subtitle',
+            descriptionTitle: 'description title',
+            description: 'description description description description description description description description description description description description description description description description description ',
             rate: 0.1,
             id: 'vilizivatelOchek',
             country: countries.latvia

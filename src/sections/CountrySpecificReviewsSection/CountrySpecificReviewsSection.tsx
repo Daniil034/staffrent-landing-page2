@@ -1,12 +1,10 @@
 import {Country} from "shared/types/Country";
-import {ReactNode, useEffect, useState} from "react";
-import {ReviewItem, ReviewItemProps} from "../../shared/ui/ReviewItem/ReviewItem";
-import loh from "shared/assets/img/loh.jpg";
-import pipa from "shared/assets/img/pipa.jpeg";
+import {ReactNode,} from "react";
+import {ReviewItem} from "shared/ui/ReviewItem/ReviewItem";
 import {Title} from "shared/ui/Title/Title";
 import styles from "./CountrySpecificReviewsSection.module.scss";
-import {Container} from "../../shared/ui/Container/Container";
-import {useEntitiesContext} from "../../entitites/useEntitiesContext";
+import {Container} from "shared/ui/Container/Container";
+import {useEntitiesContext} from "entitites/useEntitiesContext";
 
 type Props = {
     country: Country
@@ -55,14 +53,14 @@ function EstoniaReviews() {
 }
 
 function LatviaReviews() {
-    const [reviews, setReviews] = useState<ReviewItemProps[]>([])
+    const entities = useEntitiesContext()
 
     return (
         <>
             <Title className={styles.title} size='medium'>Отзывы людей, которые уже работают в Латвии благодаря
                 Staffrent</Title>
             <ul className={styles.list}>
-                {reviews.map((review, index) => (
+                {entities.latvia.reviews.map((review, index) => (
                     <ReviewItem
                         key={index}
                         imgPath={review.imgPath}
@@ -77,14 +75,14 @@ function LatviaReviews() {
 }
 
 function LithuaniaReviews() {
-    const [reviews, setReviews] = useState<ReviewItemProps[]>([])
+    const entities = useEntitiesContext()
 
     return (
         <>
             <Title className={styles.title} size='medium'>Отзывы людей, которые уже работают в Литве благодаря
                 Staffrent</Title>
             <ul className={styles.list}>
-                {reviews.map((review, index) => (
+                {entities.lithuania.reviews.map((review, index) => (
                     <ReviewItem
                         key={index}
                         imgPath={review.imgPath}

@@ -1,5 +1,5 @@
-@import "styles/variables";
 @import 'styles/normalize';
+@import "styles/variables";
 
 @font-face {
   font-family: "HelveticaNeueCyr";
@@ -61,4 +61,32 @@ button {
 img {
   max-width: 100%;
   display: block;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .App {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
 }

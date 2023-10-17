@@ -15,7 +15,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 2rem
+  align-items: center;
+  gap: 2rem;
 }
 
 .input {
@@ -27,6 +28,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--white);
+  max-width: 410px;
 
   &::placeholder {
     color: var(--white);
@@ -35,4 +37,8 @@
   //&:focus {
   //  outline: none;
   //}
+}
+
+.button {
+  max-width: 300px;
 }

@@ -1,8 +1,9 @@
 .root {
   padding: 2rem 4rem;
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   background: var(--white);
-  max-width: 25rem;
+  width: 25rem;
+  max-width: 300px;
 }
 
 .img {
@@ -10,10 +11,16 @@
 }
 
 .price {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .link {
   max-width: 13.5rem;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .root {
+    padding: 1.5rem 2rem;
+  }
 }

@@ -3,12 +3,53 @@
 }
 
 .title {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 2rem;
   align-items: center;
+}
+
+.advantages {
+  max-width: 800px;
+  margin: 4rem auto 0;
+  background-color: var(--white);
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.8rem;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark);
+  display: none;
+
+  span {
+    color: var(--red);
+  }
+}
+
+.advantagesList {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.moreVacanciesButton {
+  width: min(25rem, 380px);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.3rem solid var(--white);
+  margin: 2rem auto 0;
+  display: block;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .advantages {
+    display: block;
+  }
 }

@@ -8,6 +8,11 @@
   background-position: center;
 }
 
+.content {
+  max-width: 1180px;
+  margin: 0 auto 6rem;
+}
+
 .title {
   margin-bottom: 2rem;
 }
@@ -40,14 +45,30 @@
   }
 }
 
+.cared {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  top: 9rem;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: 2px solid var(--white);
+  background-color: var(--red);
+  color: var(--white);
+  width: 90%;
+  transform: translateX(10%);
+}
+
 .flag {
   position: absolute;
+  width: 5rem;
   top: -2rem;
   right: -2rem;
 }
 
 .statisticsBlock {
-  padding: 1rem 5.5rem 0;
+  padding: 0 3rem;
   margin: 0 auto;
 }
 
@@ -63,5 +84,21 @@
   span {
     color: var(--red);
     font-weight: 700;
+  }
+}
+
+.noNeedToThink,
+.statisticsBlock {
+  max-width: min(80%, 700px);
+}
+
+@media screen and (min-width: 768px) {
+  .flag {
+    width: 8.3rem;
+  }
+
+  .withBG {
+    padding-top: 3.5rem;
+    padding-bottom: 10rem;
   }
 }

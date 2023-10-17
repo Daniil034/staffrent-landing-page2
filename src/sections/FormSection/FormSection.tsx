@@ -54,7 +54,7 @@ export function FormSection() {
                         onChange={handleInputChange('mail')}
                         required
                     />
-                    <Button type='submit'>Отправить</Button>
+                    <Button className={styles.button} type='submit'>Отправить</Button>
                 </form>
             </Container>
         </section>

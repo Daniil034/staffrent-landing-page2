@@ -17,6 +17,7 @@
 
 .logo {
   width: 10rem;
+  height: auto;
 }
 
 .link {
@@ -25,4 +26,10 @@
 
 .bottom {
   text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    width: 16rem;
+  }
 }

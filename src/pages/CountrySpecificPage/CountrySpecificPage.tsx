@@ -1,6 +1,6 @@
 import {Route, Routes, useParams} from "react-router-dom";
 import {Country} from "shared/types/Country";
-import {Suspense, useEffect} from "react";
+import {useEffect} from "react";
 import {fetchCountrySpecificReviews} from "entitites/countrySpecificReviews/countrySpecificReviews";
 import {useEntitiesContext} from "entitites/useEntitiesContext";
 import {CountrySpecificPageDescription} from "./CountrySpecificPageDescription";

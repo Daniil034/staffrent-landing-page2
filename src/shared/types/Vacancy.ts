@@ -1,5 +1,5 @@
 export type Vacancy = {
-    imgSrc: string,
+    imgSrc: string[],
     title: string,
     subtitle: string,
     descriptionTitle: string,

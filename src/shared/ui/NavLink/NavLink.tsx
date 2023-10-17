@@ -1,6 +1,6 @@
+import {Link} from "react-router-dom";
 import classnames from "classnames";
 import styles from './NavLink.module.scss';
-import {Link} from "react-router-dom";
 
 type Props = {
     href: string,
