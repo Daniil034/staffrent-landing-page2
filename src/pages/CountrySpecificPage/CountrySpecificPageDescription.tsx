@@ -8,6 +8,7 @@ import {
 import {
     CountrySpecificContactsSection
 } from "sections/CountrySpecificContactsSection/CountrySpecificContactsSection";
+import {InstaIframeSection} from "../../sections/InstaIframeSection/InstaIframeSection";
 
 type Props = {
     countryName: Country
@@ -20,6 +21,7 @@ export function CountrySpecificPageDescription(props: Props) {
             <VacanciesSection countryName={props.countryName as Country}/>
             <FormSection/>
             <CountrySpecificReviewsSection country={props.countryName as Country}/>
+            <InstaIframeSection/>
             <CountrySpecificContactsSection country={props.countryName as Country}/>
         </>
     );
