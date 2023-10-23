@@ -23,3 +23,9 @@
 .age {
   margin-bottom: 1.2rem;
 }
+
+@media screen and (min-width: 992px) {
+  .root {
+    padding: 1rem;
+  }
+}
