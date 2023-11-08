@@ -16,6 +16,8 @@ export default function CountrySpecificPage() {
             entities[countryName as Country].setReviews(reviews);
         })
         fetchVacancies(countryName as Country).then(vacancies => {
+            console.log(vacancies);
+            console.log(countryName);
             entities[countryName as Country].setVacancies(vacancies)
         })
     }, [countryName]);

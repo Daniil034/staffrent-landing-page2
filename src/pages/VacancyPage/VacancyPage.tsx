@@ -56,7 +56,7 @@ export function VacancyPage() {
                 <table className={styles.table}>
                     <tbody>
                     <tr>
-                        <td>1 hr</td>
+                        <td>1 час</td>
                         <td>€{vacancy?.rate}</td>
                         <td>{vacancy?.country}</td>
                     </tr>
