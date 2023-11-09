@@ -9,7 +9,7 @@ type Props = {
 
 export function NavLink(props: Props) {
     return (
-        <Link className={classnames(styles.root, props.className)} to={props.href}>
+        <Link preventScrollReset={true} className={classnames(styles.root, props.className)} to={props.href}>
             Узнать больше
         </Link>
     );

@@ -11,6 +11,7 @@ import fishProcessingFactory2 from 'shared/assets/img/vacancyStubs/fishProcessin
 import fishProcessingFactory3 from 'shared/assets/img/vacancyStubs/fishProcessingFactory3.jpg';
 import fishProcessingFactory4 from 'shared/assets/img/vacancyStubs/fishProcessingFactory4.jpg';
 import seamstress from 'shared/assets/img/vacancyStubs/seamstress.jpg';
+import vacancyPlaceholder from 'shared/assets/img/vacancyStubs/vacancyPlaceholder.png';
 import styles from './vacancies.module.scss';
 
 export function fetchVacancies(country: Country): Promise<Vacancy[]> {
@@ -166,7 +167,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.latvia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Разнорабочий на деревообрабатывающее предприятие',
             subtitle: '',
             descriptionTitle: '',
@@ -208,7 +209,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.latvia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Водитель фронтальных погрузчиков (большой погрузчик) на деревообрабатывающее предприятие',
             subtitle: '',
             descriptionTitle: '',
@@ -251,7 +252,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.latvia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Кондитер на кондитерское предприятие',
             subtitle: '',
             descriptionTitle: '',
@@ -860,7 +861,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.latvia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Сварщик (135,136,141)',
             subtitle: '',
             descriptionTitle: '',
@@ -901,7 +902,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Слесарь-сборщик',
             subtitle: 'Таллин',
             descriptionTitle: '',
@@ -935,7 +936,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Вальцовщик',
             subtitle: 'Таллин',
             descriptionTitle: '',
@@ -967,7 +968,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Разнорабочий',
             subtitle: 'Пярну',
             descriptionTitle: 'На производство текстильной промышленности',
@@ -994,7 +995,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Семейная пара на производство (деревообработка)',
             subtitle: 'Тарту',
             descriptionTitle: '',
@@ -1026,7 +1027,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Плотник',
             subtitle: 'Тарту',
             descriptionTitle: 'Производство Модульных домов',
@@ -1052,7 +1053,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Разнорабочий на производство (деревообработка)',
             subtitle: 'Тарту',
             descriptionTitle: '',
@@ -1084,7 +1085,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Разнорабочий на производство (деревообработка)',
             subtitle: 'Выру',
             descriptionTitle: '',
@@ -1116,7 +1117,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Строитель на реновацию здания',
             subtitle: 'Тарту',
             descriptionTitle: '',
@@ -1150,7 +1151,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Бетонщик',
             subtitle: 'Таллинн',
             descriptionTitle: 'Производство бетонных панелей',
@@ -1183,7 +1184,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Разнорабочий на установку и комплектовку окон',
             subtitle: 'Пайде',
             descriptionTitle: '',
@@ -1209,7 +1210,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Фрезеровщик на мануальный станок',
             subtitle: 'Таллин',
             descriptionTitle: '',
@@ -1248,7 +1249,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Плотник, маляр, кровельщик на строительный объект',
             subtitle: 'Таллин',
             descriptionTitle: '',
@@ -1281,7 +1282,7 @@ export function fetchVacancies(country: Country): Promise<Vacancy[]> {
             country: countries.estonia
         },
         {
-            imgSrc: [],
+            imgSrc: [vacancyPlaceholder],
             title: 'Маляр по металлу',
             subtitle: '',
             descriptionTitle: '',

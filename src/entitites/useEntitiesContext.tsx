@@ -24,7 +24,10 @@ type ContextType = {
         setReviews: React.Dispatch<React.SetStateAction<Review[]>>,
         vacancies: Vacancy[],
         setVacancies: React.Dispatch<React.SetStateAction<Vacancy[]>>,
-    }
+    },
+    numOfReviewsShowed: number,
+    showMoreReviews: () => void;
+    resetReviews: () => void;
 }
 
 const EntitiesContext = createContext<ContextType | null>(null)
@@ -37,6 +40,15 @@ export function EntitiesProvider({children}: { children: ReactNode }) {
     const [latviaVacancies, setLatviaVacancies] = useState<Vacancy[]>([]);
     const [lithuaniaReviews, setLithuaniaReviews] = useState<Review[]>([]);
     const [lithuaniaVacancies, setLithuaniaVacancies] = useState<Vacancy[]>([]);
+    const [numOfReviewsShowed, setNumOfReviewsShowed] = useState(6);
+
+    const showMoreReviews = () => {
+        setNumOfReviewsShowed(prev => prev + 6);
+    }
+
+    const resetReviews = () => {
+        setNumOfReviewsShowed(6);
+    }
 
     const entities: ContextType = {
         mixed: {
@@ -60,7 +72,10 @@ export function EntitiesProvider({children}: { children: ReactNode }) {
             setReviews: setLithuaniaReviews,
             vacancies: lithuaniaVacancies,
             setVacancies: setLithuaniaVacancies
-        }
+        },
+        numOfReviewsShowed,
+        showMoreReviews,
+        resetReviews
     };
 
     return (

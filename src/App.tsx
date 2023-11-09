@@ -1,4 +1,4 @@
-import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Navigate, Route, RouterProvider, Routes, ScrollRestoration} from "react-router-dom";
 import {MainPage} from "pages/MainPage";
 import {FooterSection} from "sections/FooterSection/FooterSection";
 import {EntitiesProvider} from "entitites/useEntitiesContext";
@@ -17,11 +17,17 @@ function App() {
                     <main className='pageContent'>
                         <Routes>
                             <Route index path='/' element={<MainPage/>}/>
-                            <Route path='/:countryName/*' element={<Suspense fallback={<Loader/>}>
-                                <CountrySpecificPageAsync/>
-                            </Suspense>}/>
+                            <Route
+                                path='/:countryName/*'
+                                element={
+                                    <Suspense fallback={<Loader/>}>
+                                        <CountrySpecificPageAsync/>
+                                    </Suspense>
+                                }
+                            />
                             <Route path="*" element={<Navigate to="/" replace/>}/>
                         </Routes>
+                        {/*<RouterProvider router={appRouter}/>*/}
                     </main>
                 </EntitiesProvider>
                 <FooterSection/>

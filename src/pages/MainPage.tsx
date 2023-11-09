@@ -8,6 +8,8 @@ import {ContactsSection} from "sections/ContactsSection/ContactsSection";
 import {useEntitiesContext} from "entitites/useEntitiesContext";
 import {useEffect} from "react";
 import {fetchMixedReviews} from "entitites/mixedReviews/mixedReviews";
+import {ScrollRestoration} from "react-router-dom";
+import {ScrollToTop} from "../shared/lib/ScrollToTop/ScrollToTop";
 
 export function MainPage() {
     const entities = useEntitiesContext();

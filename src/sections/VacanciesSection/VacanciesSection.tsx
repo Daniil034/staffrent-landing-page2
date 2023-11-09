@@ -12,23 +12,23 @@ type Props = {
 
 export function VacanciesSection(props: Props) {
     const entities = useEntitiesContext();
-    const [vacanciesShowed, setVacanciesShowed] = useState(3);
+    // const [vacanciesShowed, setVacanciesShowed] = useState(6);
     const countryVacancies = entities[props.countryName].vacancies;
 
-    const handleShowMore = () => {
-        if (vacanciesShowed + 3 > countryVacancies.length) {
-            setVacanciesShowed(countryVacancies.length)
-            return;
-        }
-        setVacanciesShowed(prev => prev + 3);
-    }
+    // const handleShowMore = () => {
+    //     if (vacanciesShowed + 3 > countryVacancies.length) {
+    //         setVacanciesShowed(countryVacancies.length)
+    //         return;
+    //     }
+    //     setVacanciesShowed(prev => prev + 6);
+    // }
 
     return (
         <section className={styles.root}>
             <Container>
                 <Title className={styles.title} size='large' color='white'>Вакансии</Title>
                 <ul className={styles.list}>
-                    {countryVacancies.slice(0, vacanciesShowed).map(vacancy => (
+                    {countryVacancies.slice(0, entities.numOfReviewsShowed).map(vacancy => (
                         <VacancyItem
                             key={vacancy.id}
                             imgSrc={vacancy.imgSrc}
@@ -38,10 +38,10 @@ export function VacanciesSection(props: Props) {
                         />
                     ))}
                 </ul>
-                {vacanciesShowed < countryVacancies.length && (
+                {entities.numOfReviewsShowed < countryVacancies.length && (
                     <button
                         className={styles.moreVacanciesButton}
-                        onClick={handleShowMore}
+                        onClick={entities.showMoreReviews}
                     >
                         Больше вакансий
                     </button>
